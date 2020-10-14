@@ -65,13 +65,13 @@ public class Main {
     }
 
     public static String existsTriangle(double a, double b, double c) {
-        if (noneTriangle(a, b, c)) {
+        if (noExistsTriangle(a, b, c)) {
             return "Triangle exists";
         }
         return "Triangle NaN";
     }
 
-    private static boolean noneTriangle(double a, double b, double c) {
+    private static boolean noExistsTriangle(double a, double b, double c) {
         return (a + b < c) || (a + c < b) || (b + c < a);
     }
 
