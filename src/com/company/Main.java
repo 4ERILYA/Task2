@@ -7,12 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double x1 = input("x1");
-        double y1 = input("y1");
-        double x2 = input("x2");
-        double y2 = input("y2");
-        double x3 = input("x3");
-        double y3 = input("y3");
+        double x1 = readData("x1");
+        double y1 = readData("y1");
+        double x2 = readData("x2");
+        double y2 = readData("y2");
+        double x3 = readData("x3");
+        double y3 = readData("y3");
         double a = calculateSideLength(x1, x2, y1, y2);
         double b = calculateSideLength(x2, x3, y2, y3);
         double c = calculateSideLength(x1, x3, y1, y3);
@@ -45,7 +45,7 @@ public class Main {
         return Math.abs(a - b) <= 0e-10;
     }
 
-    public static double input(String value) {
+    public static double readData(String value) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Input your value " + value + " ");
         return scan.nextDouble();
