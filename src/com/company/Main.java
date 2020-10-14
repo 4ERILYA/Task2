@@ -66,9 +66,9 @@ public class Main {
 
     public static String existsTriangle(double a, double b, double c) {
         if (noExistsTriangle(a, b, c)) {
-            return "Triangle exists";
+            return "Triangle NaN";
         }
-        return "Triangle NaN";
+        return "Triangle exists";
     }
 
     private static boolean noExistsTriangle(double a, double b, double c) {
